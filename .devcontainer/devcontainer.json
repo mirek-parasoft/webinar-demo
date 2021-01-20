@@ -1,0 +1,11 @@
+{
+    "name": "C/C++test",
+    "image": "parasoft-iar-toolchain:latest",
+    "runArgs": ["--rm"],
+    "extensions": ["parasoft.vscode-cpptest", "ms-vscode.cmake-tools"],
+    "settings": {
+        "cpptest.installationLocation": "/opt/parasoft/cpptest/",
+        "cpptest.compilerIdentifier": "iccarm_8_50",
+        "cpptest.testConfiguration": "builtin://MISRA C 2012"
+    }
+}
