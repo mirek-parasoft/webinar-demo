@@ -7,5 +7,6 @@
         "cpptest.installationLocation": "/opt/parasoft/cpptest/",
         "cpptest.compilerIdentifier": "iccarm_8_50",
         "cpptest.testConfiguration": "builtin://MISRA C 2012"
-    }
+    },
+    "mounts": ["type=bind,src=${localEnv:HOME}/.ssh,dst=/home/ciuser/.ssh"]
 }
