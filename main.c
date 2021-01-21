@@ -5,5 +5,5 @@ int foo(int a, int d) {
 
 int main()
 {
-    return foo(1,2);
+    return foo(1,7);
 }
