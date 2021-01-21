@@ -24,7 +24,7 @@ jobs:
           /opt/parasoft/cpptest/bin/cpptesttrace make clean all
       - name: test
         run: |
-          cpptestcli -settings pipeline.properties -module . -input cpptestscan.bdf
+          cpptestcli -settings pipeline.properties -config "builtin://MISRA C 2012" -module . -input cpptestscan.bdf
       - name: report
         uses: github/codeql-action/upload-sarif@v1
         with:
